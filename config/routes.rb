@@ -7,6 +7,10 @@ root 'products#index'
     resources :products
   end
 
+  namespace :account do
+    resources :orders
+  end
+
   resources :products do
     member do
       post :add_to_cart

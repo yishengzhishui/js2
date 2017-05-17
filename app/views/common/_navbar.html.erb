@@ -26,6 +26,9 @@
                      <b class="caret"></b>
                  </a>
                  <ul class="dropdown-menu">
+                   <li>
+                     <%= link_to("个人订单", account_orders_path)%>
+                   </li>
                    <% if current_user.admin? %>
                     <li>
                       <%= link_to("Admin 选单", admin_products_path)%>
