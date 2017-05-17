@@ -8,7 +8,7 @@ class OrdersController < ApplicationController
     if @order.save
       redirect_to order_path(@order)
     else
-      render 'cart/checkout'
+      render 'carts/checkout'
     end
   end
 
