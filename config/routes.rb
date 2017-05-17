@@ -21,5 +21,6 @@ root 'products#index'
   end
 
   resources :cart_items
+  resources :orders
 
 end
